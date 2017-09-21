@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcModulePj", "MvcModulePj\MvcModulePj.csproj", "{B59D16D5-8C1A-4383-8DA4-47C019B1A4CA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59D16D5-8C1A-4383-8DA4-47C019B1A4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59D16D5-8C1A-4383-8DA4-47C019B1A4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59D16D5-8C1A-4383-8DA4-47C019B1A4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59D16D5-8C1A-4383-8DA4-47C019B1A4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
