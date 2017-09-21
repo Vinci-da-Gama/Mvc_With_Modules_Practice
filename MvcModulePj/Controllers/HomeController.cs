@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace MvcModulePj.Controllers
 {
-    public class HomeIndexController : Controller
+    public class HomeController : Controller
     {
-        // GET: HomeIndex
-        public ActionResult Home()
+        // GET: Home
+        public ActionResult Index()
         {
             return View();
         }
