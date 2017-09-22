@@ -282,6 +282,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\Blue\Views\web.config" />
+    <Content Include="Areas\Red\Views\web.config" />
+    <Content Include="Areas\Yellow\Views\web.config" />
+    <Content Include="Areas\Blue\Views\Blue\Index.cshtml" />
+    <Content Include="Areas\Red\Views\Red\Index.cshtml" />
+    <Content Include="Areas\Yellow\Views\Yellow\Index.cshtml" />
+    <Content Include="Areas\Blue\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Red\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Yellow\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -299,7 +308,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
-    <Compile Include="Areas\Modules_Areas\Modules_AreasAreaRegistration.cs" />
+    <Compile Include="Areas\Blue\BlueAreaRegistration.cs" />
+    <Compile Include="Areas\Blue\Controllers\BlueController.cs" />
+    <Compile Include="Areas\Red\Controllers\RedController.cs" />
+    <Compile Include="Areas\Red\RedAreaRegistration.cs" />
+    <Compile Include="Areas\Yellow\Controllers\YellowController.cs" />
+    <Compile Include="Areas\Yellow\YellowAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -308,13 +322,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Areas\Modules_Areas\Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -324,9 +338,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Modules_Areas\Controllers\" />
-    <Folder Include="Areas\Modules_Areas\Models\" />
-    <Folder Include="Areas\Modules_Areas\Views\Shared\" />
+    <Folder Include="Areas\Blue\Models\" />
+    <Folder Include="Areas\Blue\Views\Shared\" />
+    <Folder Include="Areas\Red\Models\" />
+    <Folder Include="Areas\Red\Views\Shared\" />
+    <Folder Include="Areas\Yellow\Models\" />
+    <Folder Include="Areas\Yellow\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
