@@ -288,9 +288,6 @@
     <Content Include="Areas\Blue\Views\Blue\Index.cshtml" />
     <Content Include="Areas\Red\Views\Red\Index.cshtml" />
     <Content Include="Areas\Yellow\Views\Yellow\Index.cshtml" />
-    <Content Include="Areas\Blue\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Red\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Yellow\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

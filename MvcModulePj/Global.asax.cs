@@ -17,4 +17,10 @@ namespace MvcModulePj
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
+
+    public static class Application
+    {
+        // Define a static Dictionary indicating the available areas
+        public static Dictionary<string, bool> ModulesEnabled = new Dictionary<string, bool>();
+    }
 }

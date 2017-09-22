@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 
 namespace MvcModulePj.Areas.Red
 {
@@ -12,12 +13,20 @@ namespace MvcModulePj.Areas.Red
             }
         }
 
-        public override void RegisterArea(AreaRegistrationContext context) 
+        //public override void RegisterArea(AreaRegistrationContext context) 
+        //{
+        //    context.MapRoute(
+        //        "Red_default",
+        //        "Red/{controller}/{action}/{id}",
+        //        new { action = "Index", id = UrlParameter.Optional }
+        //    );
+        //}
+        public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Red_default",
-                "Red/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                  AreaName,
+                  String.Format("Parent/{0}/{{action}}/{{id}}", AreaName),
+                  new { controller = AreaName, action = "Index", id = UrlParameter.Optional }
             );
         }
     }
