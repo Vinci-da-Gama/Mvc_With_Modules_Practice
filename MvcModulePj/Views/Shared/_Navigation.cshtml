@@ -1,5 +1,22 @@
-﻿<nav class="menu">
-    <a href="@Url.Action("Index","Blue", new { area = "Blue" })">Blue</a>
-    <a href="@Url.Action("Index","Red", new { area = "Red" })">Red</a>
-    <a href="@Url.Action("Index","Yellow", new { area = "Yellow" })">Yellow</a>
-</nav>
+﻿
+    @if (Application.ModulesEnabled["Blue"])
+    {
+        <a href="@Url.Action("Index","Blue", new { area = "Blue" })" class="item">
+            Blue
+        </a>
+    }
+    @if (Application.ModulesEnabled["Red"])
+    {
+        <a href="@Url.Action("Index", "Red", new { area = "Red" })" class="item">
+            Red
+        </a>
+    }
+    @if (Application.ModulesEnabled["Yellow"])
+    {
+        <a href="@Url.Action("Index", "Yellow", new { area = "Yellow" })" class="item">
+            Yellow
+        </a>
+    }
+    <a href="/" class="item">
+        Home
+    </a>

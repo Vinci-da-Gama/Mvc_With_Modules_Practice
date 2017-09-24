@@ -22,6 +22,9 @@ namespace MvcModulePj
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/cust").Include(
+                      "~/Scripts/Cust/cust.js"));
+
             bundles.Add(new StyleBundle("~/Content/csslibs").Include(
                       "~/Content/semantic.css"
             ));
